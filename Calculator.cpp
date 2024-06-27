@@ -1,31 +1,35 @@
 #include<iostream>
 using namespace std;
-void add(float a, float b)
+void add(void)
 {
+    float a, b;
     cout<<"Enter the first number: ";
     cin>>a;
     cout<<"Enter the second number: ";
     cin>>b;
     cout<<a<<" + "<<b<<" = "<<a+b;
 }
-void sub(float a, float b)
+void sub(void)
 {
+    float a, b;
     cout<<"Enter the first number: ";
     cin>>a;
     cout<<"Enter the second number: ";
     cin>>b;
     cout<<a<<" - "<<b<<" = "<<a-b;
 }
-void mul(float a, float b)
+void mul(void)
 {
+    float a, b;
     cout<<"Enter the first number: ";
     cin>>a;
     cout<<"Enter the second number: ";
     cin>>b;
     cout<<a<<" x "<<b<<" = "<<a*b;
 }
-void divide(float a, float b)
+void divide(void)
 {
+    float a, b;
     cout<<"Enter the first number: ";
     cin>>a;
     cout<<"Enter the second number: ";
@@ -49,16 +53,17 @@ int main()
         cin>>choice;
         switch(choice)
         {
-            case '+': add(a,b);
+            case '+': add();
                       break;
-            case '-': sub(a,b); 
+            case '-': sub(); 
                       break;
-            case '*': mul(a,b);
+            case '*': mul();
                       break;
-            case '/': divide(a,b);
+            case '/': divide();
                       break;
             default: cout<<"Exiting...\n";
         }
     } while (choice=='+' || choice=='-' || choice=='*' || choice=='/');
     cout<<"Thank you for using the calculator!";
 }
+
