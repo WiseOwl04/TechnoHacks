@@ -51,7 +51,7 @@ int main()
         {
             case '+': add(a,b);
                       break;
-            case '-': sub(a,b);
+            case '-': sub(a,b); 
                       break;
             case '*': mul(a,b);
                       break;
